@@ -1,0 +1,92 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+    --Light: #F6FBFF;
+    --Dark: #080017;
+    --color-Light: #0F0129;
+    --color-Dark: #F8F3FF;
+}
+*{
+    color: var(--color-Dark);
+}
+
+body{
+    /* background: linear-gradient(90deg,#000000,#73737373); */
+    position: relative;
+    background-image: url('/src/images/Windows1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    backdrop-filter: blur(5px);
+}
+
+.navbar a , .bi-star-fill{
+    color: var(--color-Dark);
+}
+
+.navbar-brand:hover{
+    color: var(--color-Dark);
+}
+.container{
+    max-width: 1190px;
+    margin: 20px auto;
+    padding: 1rem;
+}
+
+.products-con{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px , 1fr));
+    grid-gap: 1rem;
+}
+
+.products-item{
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    border-radius: 15px;
+    background-color: var(--color1);
+}
+
+.Temperature{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+    grid-gap: 1rem;
+    
+}
+
+.Celsius{
+    padding: 10px;
+    position: relative;
+    color: var(--color-Dark);
+    text-align: center;
+}
+.Celsius p{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.Celsius h1{
+    font-size: 5rem;
+}
+.Fahrenheit-Humidity{
+    padding: 10px;
+    color: var(--color-Dark);
+}
+.Fahrenheit-Humidity span{
+    display: flex;
+}
+.led{
+    display: flex;
+    padding: 20px;
+}
+#led1 ,#led2{
+    height: 40px;
+    width: 80px;
+}
